@@ -1,0 +1,44 @@
+<!-- HOME PAGE -->
+<div class="screen gone" id="home">
+  <!-- Hero -->
+  <div class="hm-hero">
+    <!-- 🖼️ REPLACE SRC with your athlete photo -->
+    <img class="hm-hero-img" src="../assets/home-page-pht.avif" alt=""/>
+    <div class="hm-hero-veil"></div>
+    <div class="hm-hero-content">
+      <div>
+        <div style="text-align: center; margin-bottom: 20px;">
+          <img src="../assest/logo.png" alt="MoveX Logo" style="width: 80px; height: auto;"/>
+        </div>
+        <div class="hm-hi">Hi!</div>
+        <div class="hm-name" id="heroName">ATHLETE</div>
+      </div>
+      <div class="hm-streak">
+        <div class="hm-streak-dot"></div>
+        <div class="hm-streak-txt">Week 1 · Beginner Plan</div>
+      </div>
+    </div>
+  </div>
+  <!-- Dynamic content injected here -->
+  <div id="mainContent" style="flex:1;overflow-y:auto;"></div>
+  <!-- Nav -->
+  <div class="nav-bar">
+    <button class="nav-btn on" id="nb-workout" onclick="switchMain('workout',this)">
+      <svg class="nav-icon" viewBox="0 0 20 20" fill="none">
+        <rect x="2" y="9" width="4" height="2" rx="1" fill="currentColor"/>
+        <rect x="14" y="9" width="4" height="2" rx="1" fill="currentColor"/>
+        <rect x="5" y="6" width="2" height="8" rx="1" fill="currentColor"/>
+        <rect x="13" y="6" width="2" height="8" rx="1" fill="currentColor"/>
+        <rect x="7" y="8" width="6" height="4" rx="1" fill="currentColor"/>
+      </svg>
+      Workout
+    </button>
+    <button class="nav-btn" id="nb-diet" onclick="switchMain('diet',this)">
+      <svg class="nav-icon" viewBox="0 0 20 20" fill="none">
+        <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M10 6v4l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      Diet
+    </button>
+  </div>
+</div>
